@@ -1,6 +1,8 @@
-# Data Structure
+# CS 225 Note
 
-## Heaps
+## Data Structure
+
+### Heaps
 
 #### Introduction
 
@@ -49,7 +51,7 @@ void heap<T, Compare>::heapifyDown(size_t currentIdx)
 
 ​	The left and right child are at $a/2$'th index and $2a+1$'th index respectivitly.
 
-## Hash Table
+### Hash Table
 
 #### Introduction
 
@@ -95,7 +97,7 @@ Without creating any additional memory, we can just find the next avaliable entr
 - Worest-case performance to insert a value:$O(n)$
 - Best-case performance to insert a value:$O(1)$
 
-## B-Trees
+### B-Trees
 
 #### Introduction
 
@@ -133,7 +135,7 @@ A B-Tree is a self balancing **Binary Search Tree(BST)**. B-Tree has the followi
 - Performance of combining/splitting of keys: $O(M)$
 - Performance of insert/delete: $O((M/\log M)*\log N)$
 
-## AVL Tree
+### AVL Tree
 
 #### Introduction
 
@@ -181,9 +183,9 @@ void AVLTree<K, V>::rotateLeftRight(Node*& t)
 
 Node: the run time of rotation is $O(1)$
 
-# Algorithms
+## Algorithms
 
-## BFS & DFS
+### BFS & DFS
 
 BFS and DFS are graph traversal algorithms. 
 
