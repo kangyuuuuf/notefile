@@ -149,7 +149,7 @@ Code of left rotation:
 template <class K, class V>
 void AVLTree<K, V>::rotateLeft(Node*& t)
 {
-    functionCalls.push_back("rotateLeft"); // Stores the rotation name (don't remove this)
+    functionCalls.push_back("rotateLeft"); 
     // your code here
     Node* copy1 = t;
     Node* copy2 = t->right->left;
@@ -166,7 +166,7 @@ Code of left-right rotation:
 template <class K, class V>
 void AVLTree<K, V>::rotateLeftRight(Node*& t)
 {
-    functionCalls.push_back("rotateLeftRight"); // Stores the rotation name (don't remove this)
+    functionCalls.push_back("rotateLeftRight"); 
     // Implemented for you:
     rotateLeft(t->left);
     rotateRight(t);
@@ -180,3 +180,63 @@ void AVLTree<K, V>::rotateLeftRight(Node*& t)
 - Performance of delete: $O(\log n)$
 
 Node: the run time of rotation is $O(1)$
+
+# Algorithms
+
+## BFS & DFS
+
+BFS and DFS are graph traversal algorithms. 
+
+#### BFS
+
+The central idea of bteath-first search is to search "wide" before "deep" in a graph. In other words, BFS visits all neighbor of a node before visiting the neighbors of neighbors. Therefore, BFS can be used to find the shortest path from an arbitrary node to a targe node.
+
+The **queue** data structure is ued in the iterative implemtation of BFS. The next node to process is always at the front of the queue and the next node to add is always at the end of the queue. This data structure can fit with BFS which is breath-first.
+
+Here is the Pseudocode of BFS:
+
+~~~pseudocode
+BFSTraversal(start_node):
+  visited := a set to store references to all visited nodes
+
+  queue := a queue to store references to nodes we should visit later
+  queue.enqueue(start_node)
+  visited.add(start_node)
+
+  while queue is not empty:
+    current_node := queue.dequeue()
+
+    process current_node
+    # for example, print(current_node.value)
+
+    for neighbor in current_node.neighbors:
+      if neighbor is not in visited:
+        queue.enqueue(neighbor)
+        visited.add(neighbor)
+~~~
+
+BFS runs in $O(V+E)$, where $V$ is the number of vertices and $E$ is the numbder of edges in the graph. This is because:
+
+- Every node(vertex) is enqueued and processed excatly once, resulting in $O(V)$ time.
+- Every edge is checked exactily once when we do for neighbor in current_node.neighbors, resulting in an additional $O(E)$time.
+
+#### DFS
+
+In contrast, depth-first search searches "deep" before it searches "wide". If our current node has two neighbors $n_1$ and $n_2$ and we choose to visit $n_1$ next, then all the nodes reachable from $n_1$ will be visited bfore $n_2$.
+
+The **stack** data structure is used in the iterative implementation of DFS. Both of the next node to process and the next node to add are always at the top of stack. This data structure can fit with DFS which is depth-first.
+
+The code of DFS is similar to BFS with the replacment of queue to stack.
+
+DFS runs the same time with BFS.
+
+#### Note
+
+BFS and DFS are suitable for bothe traversing the graph and searching for a target node. If the goal is ti search, we can break out of the traversal when we find the target value we need.
+
+1. BFS and DFS work on both directed and undirected graphs.
+2. If the underlying graoh is diconnected, BFS and DFS can only traverse the connected component that the given starting node belongs to.
+3. BFS cannot be used to find shortest paths on weighted graphs.
+
+
+
