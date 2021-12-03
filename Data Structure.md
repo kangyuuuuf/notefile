@@ -191,7 +191,7 @@ BFS and DFS are graph traversal algorithms.
 
 #### BFS
 
-The central idea of bteath-first search is to search "wide" before "deep" in a graph. In other words, BFS visits all neighbor of a node before visiting the neighbors of neighbors. Therefore, BFS can be used to find the shortest path from an arbitrary node to a targe node.
+The central idea of breath-first search is to search "wide" before "deep" in a graph. In other words, BFS visits all neighbor of a node before visiting the neighbors of neighbors. Therefore, BFS can be used to find the shortest path from an arbitrary node to a targe node.
 
 The **queue** data structure is ued in the iterative implemtation of BFS. The next node to process is always at the front of the queue and the next node to add is always at the end of the queue. This data structure can fit with BFS which is breath-first.
 
@@ -219,12 +219,12 @@ BFSTraversal(start_node):
 
 BFS runs in $O(V+E)$, where $V$ is the number of vertices and $E$ is the numbder of edges in the graph. This is because:
 
-- Every node(vertex) is enqueued and processed excatly once, resulting in $O(V)$ time.
-- Every edge is checked exactily once when we do for neighbor in current_node.neighbors, resulting in an additional $O(E)$time.
+- Every node(vertex) is enqueued and processed exactly once, resulting in $O(V)$ time.
+- Every edge is checked exactly once when we do for neighbor in current_node.neighbors, resulting in an additional $O(E)$time.
 
 #### DFS
 
-In contrast, depth-first search searches "deep" before it searches "wide". If our current node has two neighbors $n_1$ and $n_2$ and we choose to visit $n_1$ next, then all the nodes reachable from $n_1$ will be visited bfore $n_2$.
+In contrast, depth-first search searches "deep" before it searches "wide". If our current node has two neighbors $n_1$ and $n_2$ and we choose to visit $n_1$ next, then all the nodes reachable from $n_1$ will be visited before $n_2$.
 
 The **stack** data structure is used in the iterative implementation of DFS. Both of the next node to process and the next node to add are always at the top of stack. This data structure can fit with DFS which is depth-first.
 
@@ -234,10 +234,10 @@ DFS runs the same time with BFS.
 
 #### Note
 
-BFS and DFS are suitable for bothe traversing the graph and searching for a target node. If the goal is ti search, we can break out of the traversal when we find the target value we need.
+BFS and DFS are suitable for both traversing the graph and searching for a target node. If the goal is ti search, we can break out of the traversal when we find the target value we need.
 
 1. BFS and DFS work on both directed and undirected graphs.
-2. If the underlying graoh is diconnected, BFS and DFS can only traverse the connected component that the given starting node belongs to.
+2. If the underlying graph is disconnected, BFS and DFS can only traverse the connected component that the given starting node belongs to.
 3. BFS cannot be used to find shortest paths on weighted graphs.
 
 
