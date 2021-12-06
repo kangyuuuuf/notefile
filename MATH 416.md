@@ -56,7 +56,7 @@ Note: The **singular value** of $A$ are the entries $[\Sigma]_{jj}$.
 
 Since $V$ is unitary, the transformation of $V^*x$ is acted as a reflection or rotation, the same as $U$. For the transformation of $\Sigma$, it stretches the standard basis vectors according to the singular values.
 
-![image-20211206151342048](/Users/ericfeng/Library/Application Support/typora-user-images/image-20211206151342048.png)
+![image-20211206170318744](MATH 416.assets/image-20211206170318744.png)
 
 **Proposition 5.6**	If $\sigma_1, \dots,\sigma_r$ are the positive singular values of $A \in M_{m,n}(\mathbb{C})$, then
 $$
@@ -119,7 +119,7 @@ Then, for the adjoint maps, we have the following rules:
 
 **Proposition 5.15**	Let  $T\in \mathcal{L}(V)$ be self-adjoint. If $Tv_1 = \lambda_1v_1$ and $Tv_2=\lambda_2v_2$, and $\lambda_1 \ne \lambda_2$, then $\lang v_1, v_2\rang = 0$.
 
-![image-20211206161949203](/Users/ericfeng/Library/Application Support/typora-user-images/image-20211206161949203.png)
+![image-20211206170253060](MATH 416.assets/image-20211206170253060.png)
 
 #### The Four Subspaces
 
