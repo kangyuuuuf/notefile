@@ -25,7 +25,7 @@ Te_j = \left\{
 \begin{array}{lr}
 \sigma_jf_j & if\ 1\leq j\leq r, \\
 0 & otherwise;
-\end{array}
+\end{array}\qquad
 \right.
 &T\tilde{e}_j = \left\{
 \begin{array}{lr}
@@ -153,7 +153,7 @@ u_1 & \dots & u_m\\
 \end{bmatrix}.
 $$
 
-Then if $\Sigma \in M_{m,n}$ has $\sigma_j$ in tje $(j,j)$ position for $1\leq j \leq p$ and $0$ otherwise,
+Then if $\Sigma \in M_{m,n}$ has $\sigma_j$ in the $(j,j)$ position for $1\leq j \leq p$ and $0$ otherwise,
 $$
 A = U \Sigma V^{*}
 $$
