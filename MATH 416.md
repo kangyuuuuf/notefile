@@ -158,3 +158,46 @@ $$
 A = U \Sigma V^{*}
 $$
 is an SVD of $A$.
+
+### 5.4 The Spectral Theorems
+
+**Lemma 5.18**	If $A\in M_n(\mathbb{F})$ is **Hermitian**, then $A$ has an eigenvector in $\mathbb F^n$.
+
+​	If $V$ is a nonzero finite-dimensional inner product space and $T\in \mathcal L (V)$ is self-adjoint, then $T$ has an **eigenvector**.
+
+**Theorem 5.19** (The Spectral Theorem for self-adjoint maps and Hermitian matrices) If $V$is a finite-dimensional inner product space and $T\in \mathcal L(V)$ is self-adjoint, then there is an orthonormal basis of V consisting of eigenvectors of $T$.
+
+​	If $A\in M_n(\mathbb F)$ is Hermitian or symmetrical then there exist a unitary or orthogonal matrix $U\in M_n(\mathbb F)$ and **real** numbers $\lambda_1, \dots,\lambda_n\in \mathbb R$ such that 
+$$
+A=U\text{diag}(\lambda_1, \dots,\lambda_n)U^*.
+$$
+**Theorem 5.20**	Let $A\in M_n(\mathbb C)$ be Hermitian. The following are equivalent:
+
+1. Every eigenvalue of $A$ is positive.
+2. For every $0 \ne x \in \mathbb C^n$, we have $\lang Ax,x\rang>0$.
+
+**Definition**	A matrix satisfying the equivalent properties in Theorem 5.20 is called **positive definite**.
+
+#### Normal Maps and Matrices
+
+**Definition**	A matrix $A\in M_n(\mathbb C)$ is normal if $A^*A=AA^*$. A linear map $T\in \mathcal L (V)$ is normal if $T^*T=TT^*$.
+
+**Lemma 5.21**	Let V be a complex inner product space. Given $T\in \mathcal L(V)$, define 
+$$
+T_r := \frac{1}{2}(T+T^*)\qquad \text{and} \qquad T_i:= \frac{1}{2i}(T-T^*)
+$$
+Then $T_r$ and $T_i$ are both self-adjoint, and $T$ is normal if and only if
+$$
+T_rT_i = T_iT_r
+$$
+**Lemma 5.22**	Suppose that $S,T \in \mathcal L(V)$ and that $ST=TS$. If $\lambda$ is an eigenvalue of $T$ and $v\in \text{Eig}_{\lambda}$, then $S_v \in \text{Eig}_{\lambda}$.
+
+**Theorem 5.23** (The Spectral Theorem for normal maps and normal matrices) If $V$is a finite-dimensional inner product space over $\mathbb C$ and $T\in \mathcal L(V)$ is normal, then there is an orthonormal basis of V consisting of eigenvectors of $T$.
+
+​	If $A\in M_n(\mathbb F)$ is normal, then there exists a unitary matrix $U\in M_n(\mathbb C)$ and **complex** numbers $\lambda_1, \dots,\lambda_n\in \mathbb C$ such that 
+$$
+A=U\text{diag}(\lambda_1, \dots,\lambda_n)U^*.
+$$
+**Corollary 5.24**	(The Schur decomposition) Suppose that V is a finite-dimensional complex inner product space, and $T\in \mathcal L(V) $. Then there is an orthonormal basis $\mathcal B$ of $V$ such that $[T]_\mathcal B$ is upper triangular.
+
+​	Equivalently, if $A\in M_n(\mathbb C)$, then there exists a unitary matrix $U\in M_n(\mathbb C)$ and an upper triangular matrix $T\in M_n(\mathbb C)$ such that $A=UTU^*$.
