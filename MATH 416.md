@@ -201,3 +201,91 @@ $$
 **Corollary 5.24**	(The Schur decomposition) Suppose that V is a finite-dimensional complex inner product space, and $T\in \mathcal L(V) $. Then there is an orthonormal basis $\mathcal B$ of $V$ such that $[T]_\mathcal B$ is upper triangular.
 
 ​	Equivalently, if $A\in M_n(\mathbb C)$, then there exists a unitary matrix $U\in M_n(\mathbb C)$ and an upper triangular matrix $T\in M_n(\mathbb C)$ such that $A=UTU^*$.
+
+## Chapter 6
+
+### 6.1 Determinants
+
+**Definition**	A function $f:M_n(\mathbb F)\rarr \mathbb F$ is called **isoscopic** if $f(A) = 0$ whenever $A$ has two identical columns.
+
+#### Multilinear
+
+$$
+D\left( \begin{bmatrix}
+\mid&&\mid&&\mid \\
+a_1& \dots &a_j+b_j& \dots&a_n\\
+\mid&&\mid&&\mid
+\end{bmatrix}\right)= D\left( \begin{bmatrix}
+\mid&&\mid&&\mid \\
+a_1& \dots &a_j& \dots&a_n\\
+\mid&&\mid&&\mid
+\end{bmatrix}\right) = D\left( \begin{bmatrix}
+\mid&&\mid&&\mid \\
+a_1& \dots &b_j& \dots&a_n\\
+\mid&&\mid&&\mid
+\end{bmatrix}\right)
+$$
+
+
+
+and
+$$
+D\left( \begin{bmatrix}
+\mid&&\mid&&\mid \\
+a_1& \dots &ca_j& \dots&a_n\\
+\mid&&\mid&&\mid
+\end{bmatrix}\right) =cD\left( \begin{bmatrix}
+\mid&&\mid&&\mid \\
+a_1& \dots &a_j& \dots&a_n\\
+\mid&&\mid&&\mid
+\end{bmatrix}\right)
+$$
+That is, $D(A)$ is linear when the thought of as a function of one of the columns of A, with the other columns held fixed.
+
+**Lemma 6.1**	Suppose $D:M_n(\mathbb F)\rarr\mathbb F$ is an isoscopic multilinear function. If $A\in M_n(\mathbb F)$ is singular, then $D(A) = 0$.
+
+#### Alternating
+
+A multilinear function $D:M_n(\mathbb F)\rarr\mathbb F$ is called alternating if 
+$$
+D\left( \begin{bmatrix}
+\mid&&\mid \\
+a_1& \dots&a_n\\
+\mid&&\mid 
+\end{bmatrix}\right) =0
+$$
+**Lemma 6.2**	Suppose $D:M_n(\mathbb F)\rarr\mathbb F$ is an alternating multilinear function. Given $A\in M_n(\mathbb F)$ And $1\leq i \leq j \leq n$, let $B\in M_n(\mathbb F)$ be the matrix obtained from $A$ by exchanging the ith and jth columns. Then $D(B) = -D(A)$.
+
+**Theorem 6.3**	For each $n$, there is a unique alternating multilinear function $D:M_n(\mathbb F)\rarr \mathbb F$ such that $D(I_n)=1$.
+
+​	This function is called the determinant; the determinant of a matrix $A$ os denoted $\det(A)$.
+
+**Corollary 6.4**	If $D:M_n(\mathbb F) \rarr\mathbb F$ is an alternating multilinear function, then
+$$
+D(A)= D(I_n)\det A
+$$
+for evert $A\in M_n(\mathbb F)$.
+
+**Theorem 6.5**	 If $A,B \in M_n(\mathbb F)$, then $\det(AB) = \det(A)\det(B)$.
+
+**Corollary 6.6**	A matrix $A\in M_n(\mathbb F)$ is invertible $\iff \det(A) \ne0$. In that case, $\det(A^{-1})=\det(A)^{-1}$.
+
+**Corollary 6.7**	If $A,B \in M_n(\mathbb F)$ are similar, then $\det A = \det B$.
+
+**Lemma 6.8**	For each $n$, there exists a determinant function on $M_n(\mathbb F)$.
+
+### 6.2 Computing Determinants
+
+**Corollary 6.10**	If $A\in M_n(\mathbb F)$ is upper triangular, then $\det A= a_{11}\dots a_{nn} $
+
+**Theorem 6.11**	If $A\in M_n(\mathbb F)$, then $\det A^T = \det A$.
+
+**Corollary 6.13**	If $A\in M_n(\mathbb C)$, then $\det A^*=\overline{\det A}$.
+
+#### Permutations
+
+**Definition**	A **permutation** of $\{1,\dots,n\}$ is a bijective function $\sigma:\{1,\dots,n\}\rarr\{1,\dots,n\}$.
+
+Equivalently, $(\sigma(1),\dots,\sigma(n))$ is a list of all the numbers in $\{1,\dots,n\}$ in some order. The set of all permutations of $\{1,\dots,n\}$ is denoted $S_n$ and is called the symmetric group on $n$ letters.
+
+ 
