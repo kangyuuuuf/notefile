@@ -165,7 +165,7 @@ is an SVD of $A$.
 
 ​	If $V$ is a nonzero finite-dimensional inner product space and $T\in \mathcal L (V)$ is self-adjoint, then $T$ has an **eigenvector**.
 
-**Theorem 5.19** (The Spectral Theorem for self-adjoint maps and Hermitian matrices) If $V$is a finite-dimensional inner product space and $T\in \mathcal L(V)$ is self-adjoint, then there is an orthonormal basis of V consisting of eigenvectors of $T$.
+**Theorem 5.19** (The Spectral Theorem for self-adjoint maps and Hermitian matrices) If $V$ is a finite-dimensional inner product space and $T\in \mathcal L(V)$ is self-adjoint, then there is an orthonormal basis of V consisting of eigenvectors of $T$.
 
 ​	If $A\in M_n(\mathbb F)$ is Hermitian or symmetrical then there exist a unitary or orthogonal matrix $U\in M_n(\mathbb F)$ and **real** numbers $\lambda_1, \dots,\lambda_n\in \mathbb R$ such that 
 $$
