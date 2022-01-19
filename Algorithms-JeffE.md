@@ -51,3 +51,8 @@ Both mergesort and quicksort follow a general three-step pattern called **divide
 
 ### 1.7 Recursion Trees
 
+There are three cases where the level-by-level series $(\Sigma)$ is espically easy to evaluate:
+
+- **Decreasing**: If the serise decays exponentially, then $T(n) = O(f(n))$. In this case, the sum is based on the value at the root of the recursion tree.
+- **Equal**: If all terms in the series are equal, then $T(n)=O(f(n)\log n)$.
+- **Increasing**: If the serise grows exponentially, then $T(n)=O(n^{\log_cr})$. In this case, the sum is based on the number of leaves in the recursion tree.
