@@ -73,7 +73,7 @@ where $\sigma_1 \ge \dots\ge \sigma_r >0$ are the non-zero singular values of $A
 
 **Theorem 5.8** Let $A\in M_{m,n}(\mathbb{C})$ be fixed with positive singular values $\sigma_1 \ge \dots\ge \sigma_r>0$. Then for any $B \in M_{m,n} (\mathbb{C})$ with rank $k < r$,
 $$
-\norm{A-B}_{op} \ge \sigma_{k+1},
+\norm{A-B}_{op} \ge \sigma_{k+1}, 
 $$
 and equality is achieved for 
 $$
@@ -116,6 +116,8 @@ Then, for the adjoint maps, we have the following rules:
 #### Self-adjoint Maps and Matrices
 
 **Definition**	 A linear map $T\in \mathcal{L}(V)$ is self-adjoint if $T^*=T$. For field $\mathbb{C}$, a matrix is Hermitian if $A^*=A$; for field $\mathbb{R}$, a matrix is symmetric if $A^T=A$.
+
+
 
 **Proposition 5.15**	Let  $T\in \mathcal{L}(V)$ be self-adjoint. If $Tv_1 = \lambda_1v_1$ and $Tv_2=\lambda_2v_2$, and $\lambda_1 \ne \lambda_2$, then $\lang v_1, v_2\rang = 0$.
 
