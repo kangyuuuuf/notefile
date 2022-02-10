@@ -1,6 +1,12 @@
 # notefile
 
-These are the class notes created by Kangyu Feng, a student at the University of Illinois.:smiley:
+These are the class notes created by Kangyu Feng, a junior student majoring in computer science at the college of engineering at the University of Illinois.:smiley:
+
+ :school: University of Illinois at Urbana-Champaign:corn:, Bachelor, Computer Science
+
+:round_pushpin: Champaign
+
+:house: Shanghai
 
 #### Outside Course
 
@@ -12,9 +18,9 @@ These are the class notes created by Kangyu Feng, a student at the University of
 
 [**STAT 400**](./STAT-400.md)	Part of note for STAT 400 course, taught by Albert Yu.
 
-[**MATH 416**](./MATH-416.md)	Note for the final exam, including the chapter on *Singular Value Decomposition* and *determinants*.
+[**MATH 416**](./MATH-416.md)	Note for the final exam, including the Singular Value Decomposition and determinants chapter.
 
-[**CS 225**](./CS-225.md)	Note of data structure course, also included the algorithm.
+[**CS 225**](./CS-225.md)	Note of data structure course based on C++, also included the algorithm.
 
 #### Spring 2022
 
