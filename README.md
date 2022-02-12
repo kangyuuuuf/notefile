@@ -10,6 +10,8 @@ These are the class notes created by Kangyu Feng, a junior student majoring in c
 
 #### Outside Course
 
+[**WSC Project**](./WSC-Project)	Women in Computer Science project. Include the note of python.
+
 [**Algorithm Design**](./Algorithm-Design.md)	Unfinished
 
 [**Algorithms-JeffE**](./Algorithms-JeffE.md)	Unfinished
