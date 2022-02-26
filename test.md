@@ -17,4 +17,3 @@ User_data: Text Major
 User_data: Text NetId 
 ```
 
-2edwad
