@@ -54,7 +54,7 @@ cur.executemany('INSERT INTO user_data VALUES (?,?,?,?,?)', data)
 
 #### Commit
 
-After we input data into storeage, it will not update until we commit the change. Using
+After we input data into storage, it will not update until we commit the change. Using
 
 ~~~python
 conn.commit()
@@ -76,6 +76,17 @@ We need to close the cursor and the connection. Using
 cur.close()
 conn.close()
 ~~~
+
+The following part is instructed by the [Offical Page](https://docs.python.org/3/library/sqlite3.html).
+
+
+
+```
+```
+
+
+
+
 
 
 
