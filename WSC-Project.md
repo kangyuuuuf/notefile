@@ -79,14 +79,176 @@ conn.close()
 
 The following part is instructed by the [Offical Page](https://docs.python.org/3/library/sqlite3.html).
 
+## React & Javascript
+
+#### States
+
+When we are in the **function** we can just build in a state by using {}, and set the value of the state by using this.state.xxx.
+
+However, if we are under const function, we can declare a state by using
+
+```js
+const [xxx, setxxx] = useState(?)
+```
+
+while xxx is the name of state, setxxx is the set function of state, and ? is the type/initializtion of the state.
+
+Note that we need to use the state value within {}, since the states will change.
+
+#### Props
+
+Props are used to pass the data from parents to the child. For example, if we use the class such as “table”, then we can pass the value to this table by using props.
+```js
+<table name="Eric" age = "25"/>
+```
+
+In the table, we can get this props by using:
+
+```js
+<div> {this.props.name} </div>
+//or we can just pass the value before return
+cosnt {name, age} = this.props
+
+return{
+  <div> {name} </div>
+	<div> {age} </div>	
+}
+```
+
+#### Container vs UI Component
+
+![image-20220313212436140](WSC-Project.assets/image-20220313212436140.png)
+
+Usually, a container marked as **class** means it can have a state. On the other hand, UI Component marked as. const, means it does not contain a state.
+
+Note that, for a component, we do not auto get the props from parents. We need to write:
+
+```js
+const XXX = (props) =>{
+	//something
+}
+//or pass the props to a variable directly by
+const XXX = ({variable}) =>{
+	//something
+}
+```
+
+to pass the props.
+
+#### Conditional output
+
+We can use the if-statement to get the conditional output.
+
+~~~js
+if (condition){
+	//do something
+} else{
+	return null;
+}
+~~~
+
+The other way is ternary operator 
+
+~~~js
+return condition ? (output if true) : (output if false)
+~~~
+
+#### Forms
+
+A form will provide the user with an interface to input the data they want. Then, we can get the data and use it in our website.  Since we need to modify the data in the form, we need to use the state.
+
+```
+class XXX extends Component{
+	state = {
+		name: null
+	}
+	handleChange = (e) => {
+		this.setState({
+			[e.target.id]: e.target.value
+		})
+	}
+	handleSubmit = (e) => {
+		e.prebentDefault();
+		console.log(this.state);
+	}
+}
+```
+
+After we set up the function we need, we can return the things we need.
+
+```javascript
+render(){
+  return(
+    <div>
+      <form onSubmit={this,handleSubmit}>
+        <label htmlFor = "name">Name:</label>
+        <input type = "text" id = "name" onChange={this.handleChange}/>
+        <button>Submit</button>
+      </form>
+    </div>
+  )
+}
 
 
 ```
+
+### Function as a props
+
+In the parent class, we can create a function that use to collect the data user want, and add it to the list. First, change the line 12 in class XXX.
+
+```javascript
+class XXX extends Component{
+	state = {
+		name: null
+	}
+	handleChange = (e) => {
+		this.setState({
+			[e.target.id]: e.target.value
+		})
+	}
+	handleSubmit = (e) => {
+		e.prebentDefault();
+		this.props.addXXX(this.state);
+	}
+}
 ```
 
+Then, in the parent class, create a function that handles the data, remember to pass this function as a prop. Then, the child class can use this function by calling props.
+
+```js
+addXXX = (name) =>{
+  let newarr = [...this.state.oddarr, name]; 
+  // we add the new name to the old arr, create a new arr
+  this.setState({
+    arr : newarr
+  })
+}
 
 
+// add props when called
 
+<XXX addXXX = {this.addXXX}/>
+```
 
+#### Deleting data
 
+![image-20220313235700175](WSC-Project.assets/image-20220313235700175.png)
 
+Since we don’t need to fire the deleteNinja automatically, we can use an anomalous function to include it to make it happen.
+
+In parent class, define deleteXXX:
+
+```js
+deleteXXX = (name) => {
+	let XXX = this.state.XXX.filter(xxx => {
+		return xxx.name !== name
+	})
+	this.setState({
+		XXX : XXX
+	})
+}
+```
+
+More about filter:
+
+when the element xxx inside XXX will stay when the return is true. In this scenario, we want to delete the name object, then, just let them unequal when it is not true.
