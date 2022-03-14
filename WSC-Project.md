@@ -252,3 +252,5 @@ deleteXXX = (name) => {
 More about filter:
 
 when the element xxx inside XXX will stay when the return is true. In this scenario, we want to delete the name object, then, just let them unequal when it is not true.
+
+The [example code in github](https://github.com/iamshaunjp/react-redux-complete-playlist/tree/lesson-19) for above section.
