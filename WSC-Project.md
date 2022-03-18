@@ -253,4 +253,64 @@ More about filter:
 
 when the element xxx inside XXX will stay when the return is true. In this scenario, we want to delete the name object, then, just let them unequal when it is not true.
 
-The [example code in github](https://github.com/iamshaunjp/react-redux-complete-playlist/tree/lesson-19) for above section.
+The [example code in GitHub](https://github.com/iamshaunjp/react-redux-complete-playlist/tree/lesson-19) for the above section.
+
+#### CSS file
+
+We can add modify the format of a page by creating a CSS file and importing it into the page we want to modify
+
+```css
+body{
+	background: (color);
+  transition: all 1s;
+  
+}
+//we can limit the scope by using the name of file.
+.xxx form{ //use this format just in the import page
+  background: (color);
+  padding: 20px;
+} 
+
+form{ //use this format for all the page
+  background: (color);
+  padding: 20px;
+} 
+```
+
+more information about [CSS file](https://blog.pusher.com/css-modules-react/).
+
+#### Lifecycle Methods
+
+```js
+//this function fired once when the page is intitinalized
+componentDidMount(){
+	//do something
+}
+//this function fired when the props or state update
+componentDidUpdata(prevProps, prevState){
+  //do something
+}
+```
+
+See [more lifecycle functions](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
+
+#### React Router
+
+![image-20220317235714051](WSC-Project.assets/image-20220317235714051.png)
+
+ If we do not want to send the request to the server, we can use a link or Navlink to the browser. It will get the direct component in the react-dom and do not refresh the page to get a  smooth transition.
+
+#### Programmatic Redirects
+
+For the component we used, we can add take a prop argument. It will provide some information that is useful.
+
+```js
+setTimeout(() => {
+	props.history.push('/about')
+},2000);
+
+```
+
+The above code is an example of using the information in props. We can transition the about page for 2 seconds. History is the page we go.
+
+We have a higher-order component to supercharge the object that we do not have.  For example, only under the route browser with the route tag has the information of props.  By **import {withRouter} from ‘react-router-dom’**, and **export default withRouter(Navbar)**, we can get the props.
