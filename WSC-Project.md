@@ -1,4 +1,4 @@
-# WSC Project
+#  WSC Project
 
 ## Python
 
@@ -79,7 +79,7 @@ conn.close()
 
 The following part is instructed by the [Offical Page](https://docs.python.org/3/library/sqlite3.html).
 
-## React & Javascript
+## React
 
 #### States
 
@@ -314,3 +314,77 @@ setTimeout(() => {
 The above code is an example of using the information in props. We can transition the about page for 2 seconds. History is the page we go.
 
 We have a higher-order component to supercharge the object that we do not have.  For example, only under the route browser with the route tag has the information of props.  By **import {withRouter} from ‘react-router-dom’**, and **export default withRouter(Navbar)**, we can get the props.
+
+
+
+## Javascript
+
+#### Declare a variable
+
+JS has 7 data types: undefined, null, boolean, string, symbol, number, and object. We can create it by
+
+```javascript
+var myName = "Eric"
+let number = 7
+const pi = 3.14
+```
+
+There are three ways to declare a variable: var, let, const. **var** can be used to declare a global variable. **let** can not be declared twice. **const** is the variable that cannot change. Note that we do not need to declare the type of variable during the creation.
+
+![image-20220321170229721](WSC-Project.assets/image-20220321170229721.png)
+
+#### Array
+
+Nothing to say, almost like c++.
+
+Shift()	remove the first one
+
+Unshift() add to the first position
+
+#### function
+
+```js
+function name(para) {
+
+	return value;
+}
+```
+
+#### object
+
+```js
+var object = {
+	"name" : "Eric",
+  "my name" : "Eric",
+	"age" : "20"
+}; 
+
+//call by
+object.name
+//if there is a brace in the variable, a bracket is required
+object[my name]
+```
+
+```js
+//add new properties
+object[name] = sth;
+//delete properties
+delete object.name;
+```
+
+```js
+myObjecy.hasOwnProperty(sth);
+//return true if it has sth as property
+```
+
+#### condition
+
+```js
+condition ? true : false
+```
+
+#### Arrow Function
+
+it just the same as normal function
+
+ 
