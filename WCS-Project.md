@@ -1,4 +1,4 @@
-#  WSC Project
+#  WCS Project
 
 ## Python
 
