@@ -32,6 +32,14 @@ These are the class notes created by Kangyu Feng, a junior student majoring in c
 
 [**CS 128**](./CS-128.md)	Introduction to Computer Science II, C++, [Course Page](https://cs128.org/)
 
+#### Fall 2022
+
+[**CS 361**]()
+
+[**CS 411**]()
+
+[**CS 415**]()
+
 
 
 
