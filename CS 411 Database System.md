@@ -292,3 +292,63 @@ In stored procedure, we can:
 
 
 
+### Advanced SQL: Database Constraints
+
+#### Constraints
+
+Constraints are used to make sure that the data in the database “make sense”, that is important real-world properties are kept valid.
+
+#### Foreign Keys
+
+Using the keyword REFERENCES, either:
+
+1. Within the declaration of an attribute, when only one attribute is involved.
+
+2. As an element of the schema, as
+
+   FOREIGN KEY(<list of attributes>)
+
+   REFERENCES <relation>(<attributes>)
+
+If there is a foreign-key constraint from attributes of relation $R$ to the primary key of relation $S$, two violations are possible:
+
+1. An insert or update to $R$ introduces values not found in $S$
+2. A deletion or update to $S$ causes some tiples of $R$ to “dangle.”
+
+#### Actions Taken for Updates to Beers
+
+1. Default: Reject the modification
+2. Cascade: Make the same changes in Sells
+   - Deleted drink: delete Sells tuple.
+   - Updated drink: change value in Sells.
+3. Set NULL: Change the drink to NULL.
+
+#### Attribute-Based Checks
+
+Place a constraint on the value of a particular attribute. It is only checked only when a value for that attribute is inserted or updated.
+
+CHECK(<condition>) must be added to the declaration for the attribute.
+
+#### Assertions
+
+There are database-schema elements, like relations or views.
+
+Defined by:
+
+​	CREATE ASSERTION <name>
+
+​		CHECK (<condition>);
+
+#### Tiggers: Motivation
+
+Attribute-and tuple-based checks have limited capabilities.
+
+A trigger allows the user to specify when the check occurs.
+
+#### Event-Condition-Action Rules
+
+- Event: typically a type of database.
+- Condition: Any Boolean-valued expression.
+- Action: Any SQL statements.
+
+![image-20220911235455449](CS%20411%20Database%20System.assets/image-20220911235455449.png) 
