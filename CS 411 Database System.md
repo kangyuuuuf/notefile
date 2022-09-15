@@ -352,3 +352,43 @@ A trigger allows the user to specify when the check occurs.
 - Action: Any SQL statements.
 
 ![image-20220911235455449](CS%20411%20Database%20System.assets/image-20220911235455449.png) 
+
+### Conceptual Database Design
+
+#### Entity-Relationship Model
+
+Usually, Relational model has tables, while entity-relationship model has 
+
+- Entities and entity sets 
+- Relationship among entities and relationship set
+
+#### ER Model
+
+Gives us a language to specifiy
+
+- What informtionthe databse must hold
+- How the bits of infromation relate to one another
+
+#### UML Model
+
+UML is a standard language for designing software systems
+
+![image-20220914122324723](CS%20411%20Database%20System.assets/image-20220914122324723.png)
+
+**Entity**		Real-world object distinguishable from other objects. An entity is described using a set of attributes.
+
+**Entity Set**		A collection of similar entities.
+
+**Relationship	**		Assciation among 2 or more entities.
+
+**Relationship Set** 		The collection of similar relationships.
+
+#### Relationship
+
+If A,B Are sets, then a relation R is a subset of $A \times B$
+
+![image-20220914123051243](CS%20411%20Database%20System.assets/image-20220914123051243.png)
+
+![image-20220914123240371](CS%20411%20Database%20System.assets/image-20220914123240371.png)
+
+![image-20220914124302646](CS%20411%20Database%20System.assets/image-20220914124302646.png)
