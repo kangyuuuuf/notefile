@@ -62,4 +62,3 @@ Bivariate Normal follows the distribution:
 $$
 N(\mu_Y+\rho\frac{\sigma_Y}{\sigma_X}(x-\mu_x),(1-\rho^2)\sigma^2_Y)
 $$
-![image-20211204162440837](/Users/ericfeng/Library/Application Support/typora-user-images/image-20211204162440837.png)
