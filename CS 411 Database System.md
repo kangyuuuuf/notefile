@@ -392,3 +392,57 @@ If A,B Are sets, then a relation R is a subset of $A \times B$
 ![image-20220914123240371](CS%20411%20Database%20System.assets/image-20220914123240371.png)
 
 ![image-20220914124302646](CS%20411%20Database%20System.assets/image-20220914124302646.png)
+
+### Normalization 
+
+#### Desirable Properties of $R^*$
+
+1. must preserve the information of $R$ (lossless)
+2. must have a minimal amount of redundancy
+3. must be “dependency preserving”
+
+Functional dependencies(FDs) for relational tables are a generalization of the notion of key for a table.
+
+#### Superkey for a Relation
+
+Every key is a super key. A superkey is NOT necessarily a key.
+
+#### Inference Rules for FDs
+
+Splitting/Combining Rule
+
+![image-20220919000256464](CS%20411%20Database%20System.assets/image-20220919000256464.png)
+
+![image-20220919000352088](CS%20411%20Database%20System.assets/image-20220919000352088.png)
+
+### Normal Forms
+
+#### Boyce Codd Normal Form
+
+**Definition**		A relation R is in BCNF $\iff$ Whenever there is a nontrivial FD: $A_1,A_2,\dots,A_n \rarr B$, then $A_1,A_2,\dots,A_n$ is a superkey for $R$.
+
+BCNF is not unique. Sometimes we cannot find a right BCNF
+
+##### Properties of BCNF
+
+BCNF removes certain types of redundancies. All redundancies based on FDs are removed,
+
+BCNF Decomposition avoids information loss
+
+#### Third Norm Form
+
+**Definition**		A relation R is in 3rd normal form if whenever there is a nontrivial dependency $A_1,A_2,\dots,A_n \rarr B$ for R, then $\{A_1,A_2,\dots,A_n\}$ is a super-key for R, or B is part of a key.
+
+##### Preliminaries: Minimal basis
+
+Given a set of FDs: F. 
+
+Set the set F’ is equivalent to F, in the sense that F’ can be inferred from F and V. Any such F’ is said to be a basis for F.
+
+“Minimal basis”
+
+- A basis with all RHS singletons, where any modifications lead to no longer a basis, including:
+  - Dropping attribute from LHS of a rule: compact rules
+  - Dropping a rule: small # of rules
+
+3NF avoids info loss and reserve dependency 
