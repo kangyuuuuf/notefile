@@ -446,3 +446,35 @@ Set the set F’ is equivalent to F, in the sense that F’ can be inferred from
   - Dropping a rule: small # of rules
 
 3NF avoids info loss and reserve dependency 
+
+### B-tree
+
+### Hashtable
+
+## Transaction in SQL
+
+One operation executes, perhaps changes the DB state, then next operation executes.(ISOLATION)
+
+Each Operation is executed entirely or not executed at all. (ATOMIC)
+
+**Transaction** is a sequence of read ad write operations on the database with the property that either all actions complete or none completes.
+
+-   Succeed: COMMIT
+-   Or fail: ABORT OR ROLLBACK
+
+#### Concurrent Execution Problem 
+
+Write-Read conflict(WR): Dirty read, inconsistent read. Read value written by other transaction but not commit
+
+Read-Write conflict(RW): unrepeatable read. Read twice however the value change by other transaction
+
+Write-Write conflict(WW): lost update. Overwrite the first write.
+
+Phantom read occurs when, in the course of a transaction, new rows are added by another transaction to the records being read.
+
+#### Locking
+
+ Read Committed: requires a read-lock but releases the locks immeduately after the read
+
+Repeatable read: place a locks holds them until the end of the transaction
+
