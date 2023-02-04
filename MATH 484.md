@@ -167,3 +167,9 @@ then $x^*$ is a local minimizer of $f$.
 $$
 x^TAx = \sum^n_{i=1}\sum^n_{i=1}a_{ij}x_i x_j
 $$
+
+### Better Condition on $A\succ 0 $
+
+$n \times n$ symmetric A
+
+Define $A^{k}$

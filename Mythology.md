@@ -143,7 +143,7 @@ Ugarit - pool, Temple of Ba’al(lord, storm god), palymra
 
 Myth of Aqhat: Ugaritic cuneiform
 
-mycenae population center
+Mycenae population center
 
 Mycenaean period: = late bronze age in Greek
 
@@ -154,4 +154,36 @@ Pylos - megaron (3 rooms)
 Hittite
 
 Teshub - Hittie Storm god
+
+### Week 3
+
+#### Geometric Period
+
+900-700 BC
+
+Narration of myths, glorifying the “heroic age”,
+
+-   Vase Painting
+-   Introduction of alphabet
+-   Worship of Zeus
+
+Hesiod 700BC
+
+Theogony birth of the god
+
+Zeus = Mnemosyne
+
+Iconography - draw image
+
+GAIA-Greek goddess of Earth
+
+Tartarus-hell
+
+Eros - **a god not simply of passion but also of fertility**.
+
+Erodes = cupods = putto
+
+Erebos = darkness
+
+Aether = brightness
 
