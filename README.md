@@ -1,6 +1,6 @@
 # notefile
 
-These are the class notes created by Kangyu Feng, a junior student majoring in computer science at the college of engineering at the University of Illinois.:smiley:
+These are the class notes created by Kangyu Feng, a senior student majoring in computer science at the college of engineering at the University of Illinois.:smiley:
 
  :school: University of Illinois at Urbana-Champaign:corn:, Bachelor, Computer Science
 
@@ -10,19 +10,19 @@ These are the class notes created by Kangyu Feng, a junior student majoring in c
 
 #### Outside Course
 
-[**WCS Project**](./WCS-Project)	Women in Computer Science project. Include the note of python.
+[**Algorithm**](./Algorithm-Design.md)	Additional reading or material for algorithm 
 
-[**Algorithm Design**](./Algorithm-Design.md)	Unfinished
+[**Leetcode**](./LeetCode.md)	Practice algorithm question, focus on the questions on the website [Leetcode](https://leetcode.com/) and [Lintcode](https://www.lintcode.com/). 
 
-[**Algorithms-JeffE**](./Algorithms-JeffE.md)	Unfinished
+[**PrairieLearn**](./PrairieLearn.md)	Note for CS 357 PrairieLearn development
 
 #### Fall 2021
 
-[**STAT 400**](./STAT-400.md)	Part of note for STAT 400 course, taught by Albert Yu.
+[**STAT 400**](./STAT-400.md)	Basic knowledge of Statistic. Including distributions and covariance.
 
-[**MATH 416**](./MATH-416.md)	Note for the final exam, including the Singular Value Decomposition and determinants chapter.
+[**MATH 416**](./MATH-416.md)	Note for linear algebra, including the Singular Value Decomposition and determinants chapter.
 
-[**CS 225**](./CS-225.md)	Note of data structure course based on C++, also included the algorithm.
+[**CS 225**](./CS-225.md)	Note of data structure course based on C++, also included the algorithm such as DFS.
 
 #### Spring 2022
 
@@ -34,15 +34,23 @@ These are the class notes created by Kangyu Feng, a junior student majoring in c
 
 #### Fall 2022
 
-[**CS 361**]()
+[**CS 361**](./CS-361.md)	Statistic course for computer science.  Same as STAT 400
 
-[**CS 411**]()
+[**CS 374**](./CS-374.md)	This course introduces three distinct fields of computer science research: **computational complexity**, **algorithms**, and **limits of computation**.
 
-[**CS 415**]()
+[**CS 411**](./CS-411.md)	The course focuses on SQL query and Mongo DB, including the grammar and logic. Also talk about optimization. 
 
+#### Spring 2023
 
+[**CS 412**](./CS-412.md)	Intro to Data Mining, including Data Preprocessing, Mining Frequent Patterns, and Classification
 
+[**MATH 484**](./MATH-484.md)	Nonlinear Programming, including Unconstrained Optimization Minimize
 
+#### Fall 2023
+
+[**CS 445**](./CS-445.md)	 Computational Photography. Focus on an emerging field created by the convergence of computer graphics, computer vision, and photography.
+
+[**CS 446**](./CS-446.md)	Machine Learning, including three main areas, (1) supervised learning, (2) unsupervised learning, and (3) reinforcement learning models.
 
 
 
